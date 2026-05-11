@@ -1,0 +1,148 @@
+.detalhesimovel{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.galeria{
+    margin-bottom: 20px;
+}
+
+.detalhe-img{
+    position: relative;
+}
+
+.detalhe-img img{
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+.miniaturas{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 5px;
+    scrollbar-width: none;
+}
+
+.miniaturas::-webkit-scrollbar{
+    display: none;
+}
+
+.miniaturas img{
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    flex-shrink: 0;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.miniaturas img:hover{
+    opacity: 1;
+}
+
+.miniaturas img.activas{
+    border: 2px solid #007bff;
+    opacity: 1;
+}
+
+.detalhe-content{
+    margin-top: 20px;
+}
+
+.topo h1{
+    font-size: 26px;
+}
+
+.topo h2{
+    color: #2a7ae4;
+    margin: 10px 0;
+}
+
+.detalhe-infos{
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.descricao{
+    margin: 20px 0;
+}
+
+.descricao h2{
+    margin-bottom: 20px;
+}
+
+.btn-contato{
+    background: #2a7ae4;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.similares{
+    margin-top: 40px;
+}
+
+.similares h3{
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .detalhe-infos{
+        flex-direction: column;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .detalhe-img img{
+        height: 100%;
+    }
+
+    .miniaturas{
+        gap: 8px;
+    }
+
+    .miniaturas img{
+        width: 70px;
+        height: 55px;
+    }
+}

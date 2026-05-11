@@ -1,0 +1,38 @@
+.favoritos-page{
+    padding: 40px;
+}
+
+.favoritos-page h2{
+    margin-bottom: 20px;
+}
+
+.vazio{
+    color: #777;
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.btn-voltar{
+    display: inline-block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    background: #e9eef7;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #333;
+    transition: 0.5s;
+}
+
+.btn-voltar:hover{
+    background: #e8e2e2;
+}
+
+@media (max-width: 768px) {
+    .grids{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,23 @@
+.pagina-imoveis{
+    padding: 40px 5%;
+}
+
+.topo-imoveis{
+    margin-bottom: 40px;
+}
+
+.topo-imoveis h1{
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.topo-imoveis p{
+    color: #666;
+}
+
+.grid-imoveis{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}

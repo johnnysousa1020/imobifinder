@@ -1,0 +1,83 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to right, #eef3f8, #ffffff);
+}
+
+.hero-text{
+    max-width: 400px;
+}
+
+.hero-text h1{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    color:#555;
+}
+
+.hero-filtros{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.filtro{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro label{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.filtro input, .filtro select{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn-buscar{
+    background: #2a7ae4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-buscar:hover{
+    background: #1d5fc1;
+}
+
+@media (max-width: 768px) {
+    .hero{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-filtros{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filtro:nth-child(1){
+        grid-column: span 2;
+    }
+
+    .filtro:nth-child(4){
+        grid-column: span 2;
+    }
+
+    .btn-buscar{
+        grid-column: span 2;
+    }
+}

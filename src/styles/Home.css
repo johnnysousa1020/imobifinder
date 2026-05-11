@@ -1,0 +1,12 @@
+.sem-resultados{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sem-resultados h2{
+    margin-bottom: 10px;
+}
+
+.sem-resultados p{
+    color: #666;
+}
